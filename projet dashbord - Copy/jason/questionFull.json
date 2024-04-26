@@ -1,0 +1,34 @@
+{
+    "questions": [
+      {
+        "question": "What is the purpose of a package.json file in Node.js?",
+        "options": ["To define project dependencies", "To write JavaScript code", "To style HTML elements", "To define database schemas"],
+        "correct_answer": "To define project dependencies"
+      },
+      {
+        "question": "Which tool is commonly used for version control?",
+        "options": ["Git", "Node.js", "React", "Angular"],
+        "correct_answer": "Git"
+      },
+      {
+        "question": "What does API stand for?",
+        "options": ["Application Programming Interface", "Automated Programming Interface", "Advanced Protocol Interaction", "Automated Protocol Interface"],
+        "correct_answer": "Application Programming Interface"
+      },
+      {
+        "question": "Which programming language is commonly used for front-end development?",
+        "options": ["JavaScript", "Python", "Java", "Ruby"],
+        "correct_answer": "JavaScript"
+      },
+      {
+        "question": "What is the purpose of Docker?",
+        "options": ["Containerization", "Version control", "Database management", "Frontend styling"],
+        "correct_answer": "Containerization"
+      },
+      {
+        "question": "What does MVC stand for?",
+        "options": ["Model View Controller", "Model View Container", "Markup View Controller", "Main View Controller"],
+        "correct_answer": "Model View Controller"
+      }
+    ]
+  }

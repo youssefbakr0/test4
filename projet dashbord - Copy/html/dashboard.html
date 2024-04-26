@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style/add.css">
+</head>
+<body>
+  <!-- Header -->
+  
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap mr-2"></i>Your Logo</a>
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Courses Link -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-book-open mr-1"></i>Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://elzero.org/tracks/front-end/"><i class="fas fa-code mr-2"></i>Front-end</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/php-web-developer/"><i class="fas fa-database mr-2"></i>Back-end</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/full-stack-web-developer/"><i class="fas fa-cogs mr-2"></i>Full Stack</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/python-web-developer/"><i class="fas fa-globe"></i>python-web-developer</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/wordpress-developer/"><i class="fab fa-wordpress"></i>wordpress-developer</a>
+            </div>
+          </li>
+          <!-- Contact Us Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-envelope mr-1"></i>Contact Us</a>
+          </li>
+          <!-- Exams Link -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-poll mr-1"></i>Exams
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../html/index.html"onclick="confirmTestReady()"><i class="fas fa-code mr-2"></i>Front-end exams</a>
+              <a class="dropdown-item" href="../html/back.html" onclick="confirmTestReady()"><i class="fas fa-database mr-2"></i>Back-end exams</a>
+              <a class="dropdown-item" href="../html/full.html"  onclick="confirmTestReady()"><i class="fas fa-cogs mr-2"></i>Full Stack exams</a>
+              <a class="dropdown-item" href="../html/python.html"  onclick="confirmTestReady()"><i class="fas fa-globe"></i>python web developer exams</a>
+              <a class="dropdown-item" href="../html/word.html"  onclick="confirmTestReady()"><i class="fab fa-wordpress"></i>wordpress exams</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+
+<!-- courses -->
+  <!-- Main Content -->
+  <div class="MainContent mt-5">
+    <!-- Welcome Message -->
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to your Dashboard</h1>
+      <p class="lead">Explore the available courses, contact us for any inquiries, and check your results.</p>
+      <hr class="my-4">
+    </div>
+
+    <div class="contCARD mt-5">
+        
+<!-- Front-end Track Card -->
+<div class="track-card" id="Frontend ">
+  <div class="img"><img src="../img/_frontend.png" alt="Back-end Track Image"></div>
+    <div class="track-card-content">
+      <h2>Front-end Track</h2>
+      <p>This track covers HTML, CSS, and JavaScript.</p>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="https://elzero.org/tracks/front-end/">Show Course</button>
+    </div>
+  </div>
+  
+  <!-- Back-end Track Card -->
+  <div class="track-card" id=" Backend ">
+    <div class="img"><img src="../img/_backend.png" alt="Back-end Track Image"></div>
+    <div class="track-card-content">
+      <h2>Back-end Track</h2>
+      <p>This track covers server-side languages and databases.</p>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="https://elzero.org/tracks/php-web-developer/">Show Course</button>
+    </div>
+  </div>
+  
+  <!-- Full Stack Track Card -->
+  <div class="track-card" id="fullstack">
+    <div class="img"><img src="../img/_fundamentals.png" alt="Back-end Track Image"></div>
+    <div class="track-card-content">
+      <h2>Full Stack Track</h2>
+      <p>This track covers both front-end and back-end technologies.</p>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="https://elzero.org/tracks/full-stack-web-developer/">Show Course</button>
+    </div>
+  </div>
+        <!-- python-web-developer Track Card -->
+  <div class="track-card" id="fullstack">
+    <div class="img"><img src="../img/_fundamentals.png" alt="python-web-developer Track Image"></div>
+    <div class="track-card-content">
+      <h2>python web developer</h2>
+      <p>This track covers both front-end and back-end technologies.</p>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="https://elzero.org/tracks/python-web-developer/">Show Course</button>
+    </div>
+  </div>
+        <!-- wordpress-developerTrack Card -->
+  <div class="track-card" id="fullstack">
+    <div class="img"><img src="../img/_fundamentals.png" alt="wordpress-developer Track Image"></div>
+    <div class="track-card-content">
+      <h2>wordpress-developer</h2>
+      <p>This track covers both front-end and back-end technologies.</p>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="https://elzero.org/wordpress-developer/">Show Course</button>
+    </div>
+  </div>
+
+<!-- exams -->
+  <!-- Main Content -->
+  <div class="MainContent mt-5">
+    <!-- Welcome Message -->
+    <div class="jumbotron text-center">
+      <h2 class="display-4">Quizzes</h2>
+      <hr class="my-4">
+    </div>
+
+    <div class="contCARD mt-5">
+        
+<!-- Front-end Track Card -->
+<div class="track-card" id="Frontend " title="exam for track">
+  <div class="img"><img src="../img/quiz-1.svg" alt="Back-end Track Image"></div>
+    <div class="track-card-content">
+      <h2>Front-end Track</h2>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="../html/index.html">Start Qize</button>
+    </div>
+  </div>
+  
+  <!-- Back-end Track Card -->
+  <div class="track-card" id=" Backend " title="exam for track">
+    <div class="img"><img src="../img/quiz-1.svg" alt="Back-end Track Image"></div>
+    <div class="track-card-content">
+      <h2>Back-end Track</h2>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="../html/back.html">Start Qize</button>
+    </div>
+  </div>
+  
+  <!-- Full Stack Track Card -->
+  <div class="track-card" id="fullstack" title="exam for track">
+    <div class="img"><img src="../img/quiz-1.svg" alt="Back-end Track Image"></div>
+    <div class="track-card-content">
+      <h2>Full Stack Track</h2>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="../html/full.html">Start Qize</button>
+    </div>
+  </div>
+        <!-- python-web-developer Track Card -->
+  <div class="track-card" id="fullstack" title="exam for track">
+    <div class="img"><img src="../img/quiz-1.svg" alt="python-web-developer Track Image"></div>
+    <div class="track-card-content">
+      <h2>python web developer</h2>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="../html/python.html">Start Qize</button>
+    </div>
+  </div>
+        <!-- wordpress-developerTrack Card -->
+  <div class="track-card" id="fullstack" title="exam for track">
+    <div class="img"><img src="../img/quiz-1.svg" alt="wordpress-developer Track Image"></div>
+    <div class="track-card-content">
+      <h2>wordpress-developer</h2>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="../html/word.html">Start Qize</button>
+    </div>
+  </div>
+        <!-- BOOTSTRAP Card -->
+  <div class="track-card" id="fullstack" title="exam for track">
+    <div class="img"><img src="../img/quiz-1.svg" alt="BOOTSTRAP Track Image"></div>
+    <div class="track-card-content">
+      <h2>BOOTSTRAP</h2>
+      <!-- Show Course Button -->
+      <button class="btn btn-primary show-course-btn" data-link="../html/boot.html">Start Qize</button>
+    </div>
+  </div>
+  <!-- end exams -->
+
+  <!-- start lang -->
+  <div class="MainContent mt-5">
+  <!-- Welcome Message -->
+  <div class="jumbotron text-center">
+    <h2 class="display-4">languages</h2>
+    <hr class="my-4">
+  </div>
+
+  <div class="contCARD mt-5">
+      
+<!-- html Card -->
+<div class="track-card" id="Frontend " title="HTML course">
+<div class="img"><img src="../img/quiz-1.svg" alt="Back-end Track Image"></div>
+  <div class="track-card-content">
+    <h2> HTML </h2>
+    <p>ستتعلم لغة html & html5 بالطبيقات العملية لكي تكون قادر على بناء هيكل ويب كامل و تحديد و معرفة جميع عناصر html و التفريق بينهم و متى يتم استخدام كل واحد فيهم</p>
+    <!-- Show Course Button -->
+    <button class="btn btn-primary show-course-btn" data-link="../html/courses contant.html">Start course</button>
+  </div>
+</div>
+
+<!-- css Card -->
+<div class="track-card" id=" Backend " title="Css course">
+  <div class="img"><img src="../img/quiz-1.svg" alt="Back-end Track Image"></div>
+  <div class="track-card-content">
+    <h2> Css </h2>
+    <p>ستتعلم لغة css & css3 بالطبيقات العملية لكي تكون قادر على تنسيق اي صفحة ويب و تجميلها و اضافة الكثير من التأثيرات الجميلة في صفحة الويب من خلال ال css</p>
+    <!-- Show Course Button -->
+    <button class="btn btn-primary show-course-btn" data-link="../html/courses contant.html">Start course</button>
+  </div>
+</div>
+
+<!-- Js Card -->
+<div class="track-card" id="fullstack" title="Js course">
+  <div class="img"><img src="../img/quiz-1.svg" alt="Back-end Track Image"></div>
+  <div class="track-card-content">
+    <h2> JavaScript </h2> 
+    <p>كورسات البرمجة و تعتبر جافاسكريبت اهم خطوة لك في الفرونت اند ايضا يمكنك استخدامها في الباك اند و غيرها من التخصصات    </p>
+    <!-- Show Course Button -->
+    <button class="btn btn-primary show-course-btn" data-link="../html/courses contant.html">Start course</button>
+  </div>
+</div>
+      <!-- python Card -->
+<div class="track-card" id="fullstack" title="python course">
+  <div class="img"><img src="../img/quiz-1.svg" alt="python-web-developer Track Image"></div>
+  <div class="track-card-content">
+    <h2> python </h2>
+    <p>هذا الكورس مخصص للاشخاص المبتدئين اللذين يريدوا تعلم البايثون لعمل اشياء عديدة به سواء مواقع ويب او دخول الذكاء الاصطناعي او تحليل البيانات و غيره من المجالات فهذا الكورس محدث باستمرار</p>
+    <!-- Show Course Button -->
+    <button class="btn btn-primary show-course-btn" data-link="../html/courses contant.html">Start course</button>
+  </div>
+</div>
+      <!-- wordpress Card -->
+<div class="track-card" id="fullstack" title="wordpress course">
+  <div class="img"><img src="../img/quiz-1.svg" alt="wordpress-developer Track Image"></div>
+  <div class="track-card-content">
+    <h2> wordpress </h2>
+    <p>ووردبريس  هو نظام إدارة محتوى إلكتروني مفتوح المصد هدفه هو بناء صفحات الويب و ادارتها و تنظيمها بواسطة لوحة تحكم لتسهيل الامر على الاشخاص الغير مبرمجين ليتمكنوا من بناء صفحات الويب بكل سهولة</p>
+    <!-- Show Course Button -->
+    <button class="btn btn-primary show-course-btn" data-link="../html/courses contant.html">Start course</button>
+  </div>
+</div>
+      <!-- BOOTSTRAP Card -->
+<div class="track-card" id="fullstack" title="BOOTSTRAP course">
+  <div class="img"><img src="../img/quiz-1.svg" alt="wordpress-developer Track Image"></div>
+  <div class="track-card-content">
+    <h2> BOOTSTRAP </h2>
+    <p>بوتستراب Bootstrap هي إحدى أشهر المكتبات التي يستخدمها مبرمجو المواقع الإلكترونية على الإطلاق، حيث أن تطوير المواقع بشكله الحديث لم يعد يحتاج لإعادة كتابة كل حركةٍ وكل عنصرٍ من صفحات الموقع</p>
+    <!-- Show Course Button -->
+    <button class="btn btn-primary show-course-btn" data-link="../html/courses contant.html">Start course</button>
+  </div>
+</div>
+  <!-- end lang -->
+
+
+<!-- start footer -->
+
+
+<div class="wrapper">
+  <div class="content">
+    
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Your Company. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+    
+  
+    <!-- end footer -->
+
+
+
+    
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

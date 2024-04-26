@@ -1,0 +1,34 @@
+{
+    "questions": [
+      {
+        "question": "What does RESTful stand for?",
+        "options": ["Representational State Transfer", "Remote State Transfer", "Representational System Transfer", "Remote System Transfer"],
+        "correct_answer": "Representational State Transfer"
+      },
+      {
+        "question": "What is a common database language?",
+        "options": ["SQL", "HTML", "Python", "CSS"],
+        "correct_answer": "SQL"
+      },
+      {
+        "question": "Which HTTP method is used for updating a resource on the server?",
+        "options": ["GET", "PUT", "POST", "DELETE"],
+        "correct_answer": "PUT"
+      },
+      {
+        "question": "Which programming language is commonly used for server-side development?",
+        "options": ["JavaScript", "HTML", "Python", "CSS"],
+        "correct_answer": "JavaScript"
+      },
+      {
+        "question": "What is the purpose of a package.json file in Node.js?",
+        "options": ["To define project dependencies", "To write JavaScript code", "To style HTML elements", "To define database schemas"],
+        "correct_answer": "To define project dependencies"
+      },
+      {
+        "question": "Which tool is commonly used for version control?",
+        "options": ["Git", "Node.js", "React", "Angular"],
+        "correct_answer": "Git"
+      }
+    ]
+  }

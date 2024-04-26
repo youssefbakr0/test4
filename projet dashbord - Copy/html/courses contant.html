@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style/add.css">
+</head>
+<body>
+  <!-- Header -->
+  
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"><i class="fas fa-graduation-cap mr-2"></i>Your Logo</a>
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Courses Link -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-book-open mr-1"></i>Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://elzero.org/tracks/front-end/"><i class="fas fa-code mr-2"></i>Front-end</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/php-web-developer/"><i class="fas fa-database mr-2"></i>Back-end</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/full-stack-web-developer/"><i class="fas fa-cogs mr-2"></i>Full Stack</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/python-web-developer/"><i class="fas fa-globe"></i>python-web-developer</a>
+              <a class="dropdown-item" href="https://elzero.org/tracks/wordpress-developer/"><i class="fab fa-wordpress"></i>wordpress-developer</a>
+            </div>
+          </li>
+          <!-- Contact Us Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-envelope mr-1"></i>Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../html/dashboard.html"><i class="fas fa-envelope mr-1"></i> Home</a>
+          </li>
+          <!-- Exams Link -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-poll mr-1"></i>Exams
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../html/index.html"onclick="confirmTestReady()"><i class="fas fa-code mr-2"></i>Front-end exams</a>
+              <a class="dropdown-item" href="../html/back.html" onclick="confirmTestReady()"><i class="fas fa-database mr-2"></i>Back-end exams</a>
+              <a class="dropdown-item" href="../html/full.html"  onclick="confirmTestReady()"><i class="fas fa-cogs mr-2"></i>Full Stack exams</a>
+              <a class="dropdown-item" href="../html/python.html"  onclick="confirmTestReady()"><i class="fas fa-globe"></i>python web developer exams</a>
+              <a class="dropdown-item" href="../html/word.html"  onclick="confirmTestReady()"><i class="fab fa-wordpress"></i>wordpress exams</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+
+
+
+  <div class="containerVid">
+    <h1>عرض الفيديو</h1>
+    <video id="videoPlayer" controls poster="../img/quiz-1.svg">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <span class="hid" onclick="">+</span>
+    <ul>
+        <li> <i class="fab fa-youtube" style="color: aliceblue;"></i><a href="#" onclick="changeVideo('video1.mp4')"> كيف و اين نكتب ال css ؟</a></li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')">كيفية اختيار و تحديد العناصر ال css</a> </li>
+        
+        <li> <i class="fab fa-youtube" style="color: aliceblue;"></i><a href="#" onclick="changeVideo('video_2024-02-13_20-29-11.mp4')"> كيفية اختيار العناصر في ال CSS من خلال attribute        </a></li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')">padding</a> </li>
+        
+        <li> <i class="fab fa-youtube" style="color: aliceblue;"></i><a href="#" onclick="changeVideo('video1.mp4')"> تنسيق الروابط</a></li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> الفرق بين block و inline</a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> visibilty</a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> overflow</a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> تنسيق القوائم</a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> float </a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> position </a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> z-index </a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> pseudo classes and pseudo elements </a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> after & before </a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> عرض التنسيقات على الشاشات المختلفة</a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> التجاوب مع جميع الاجهزة</a> </li>
+        <li><i class="fab fa-youtube" style="color: aliceblue;"></i> <a href="#" onclick="changeVideo('video2.mp4')"> how to create slider using css only</a> </li>
+        
+    </ul>
+</div>
+
+<!-- start footer -->
+
+
+<div class="wrapper">
+  <div class="content">
+    
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Your Company. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+    
+  
+    <!-- end footer -->
+
+
+
+    
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

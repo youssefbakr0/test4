@@ -1,0 +1,56 @@
+
+
+  {
+    "questions": [
+      {
+        "question": "¿Qué componente de Bootstrap se utiliza para mostrar un conjunto de imágenes como una galería?",
+        "options": ["Carousel", "Modal", "Accordion", "Dropdown"],
+        "correct_answer": "Carousel"
+      },
+      {
+        "question": "¿Cuál es el prefijo de clase que se utiliza para indicar un tamaño de columna pequeño en Bootstrap 4?",
+        "options": [".sm", ".lg", ".xs", ".md"],
+        "correct_answer": ".sm"
+      },
+      {
+        "question": "¿Qué clase de Bootstrap se utiliza para hacer que un elemento sea visible solo en dispositivos extra pequeños?",
+        "options": [".visible-xs", ".visible-sm", ".visible-md", ".visible-lg"],
+        "correct_answer": ".visible-xs"
+      },
+      {
+        "question": "¿Qué archivo se debe incluir primero en un proyecto de Bootstrap para empezar a utilizar el framework?",
+        "options": ["bootstrap.js", "bootstrap.css", "jquery.js", "popper.js"],
+        "correct_answer": "bootstrap.css"
+      },
+      {
+        "question": "¿Cuál es la función principal de Popper.js en Bootstrap?",
+        "options": ["Gestión de eventos", "Animaciones", "Detección de dispositivos", "Posicionamiento de elementos emergentes"],
+        "correct_answer": "Posicionamiento de elementos emergentes"
+      },
+      {
+        "question": "¿Qué clase se utiliza en Bootstrap para hacer que un texto tenga un color primario?",
+        "options": [".text-primary", ".text-dark", ".text-success", ".text-danger"],
+        "correct_answer": ".text-primary"
+      },
+      {
+        "question": "¿Cuál es la clase de Bootstrap que se utiliza para centrar un elemento horizontalmente?",
+        "options": [".align-middle", ".justify-content-center", ".mx-auto", ".text-center"],
+        "correct_answer": ".mx-auto"
+      },
+      {
+        "question": "¿Qué componente de Bootstrap se utiliza para crear una barra de progreso animada?",
+        "options": ["Progress", "Bar", "Loader", "Spinner"],
+        "correct_answer": "Progress"
+      },
+      {
+        "question": "¿Cuál es el prefijo de clase que se utiliza para indicar un tamaño de columna grande en Bootstrap 4?",
+        "options": [".md", ".lg", ".xl", ".xxl"],
+        "correct_answer": ".lg"
+      },
+      {
+        "question": "¿Qué versión de jQuery es compatible con Bootstrap 5?",
+        "options": ["jQuery 1.x", "jQuery 2.x", "jQuery 3.x", "jQuery 4.x"],
+        "correct_answer": "jQuery 3.x"
+      }
+    ]
+  }

@@ -1,0 +1,38 @@
+
+
+
+
+{
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "options": ["Hyper Text Markup Language", "Hyperlinks and Text Markup Language", "Home Tool Markup Language", "Hyper Text Makeup Language"],
+      "correctAnswer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": ["Cascading Style Sheets", "Cascading Simple Sheets", "Central Style Sheets", "Computer Style Sheets"],
+      "correctAnswer": "Cascading Style Sheets"
+    },
+    {
+      "question": "Which HTML element is used to define an unordered list?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correctAnswer": "<ul>"
+    },
+    {
+      "question": "Which CSS property is used to change the text color of an element?",
+      "options": ["color", "text-color", "font-color", "text-style"],
+      "correctAnswer": "color"
+    },
+    {
+      "question": "What does JavaScript primarily do?",
+      "options": ["Styling", "Interactivity", "Markup", "Database Management"],
+      "correctAnswer": "Interactivity"
+    },
+    {
+      "question": "Which symbol is used to access jQuery?",
+      "options": ["$", "&", "%", "@"],
+      "correctAnswer": "$"
+    }
+  ]
+}
